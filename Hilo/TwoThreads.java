@@ -10,7 +10,7 @@ public class TwoThreads implements Runnable {
 		}
 	}
 	
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		new Thread(new TwoThreads(), "Thread 1").start();
 		new Thread(new TwoThreads(), "Thread 2").start();
 		new Thread(new TwoThreads(), "Thread 3").start();
