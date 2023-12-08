@@ -43,11 +43,11 @@ public class Server implements Runnable{
 		try {
 			PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 			BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-			out.println("Welcome to Server");
-			out.println("Tell me something: ");
+			out.println("Welcome to your restaurant chooser");
+			out.println("Tell me, what's your favorite food?: ");
 			
 			while ((inputLine = in.readLine()) != null) {
-				System.out.println("Catched this: " + inputLine);
+				System.out.println("The user has chosen this: " + inputLine);
 				
 				if (inputLine.equals("q")) {
 					clientSocket.close();
