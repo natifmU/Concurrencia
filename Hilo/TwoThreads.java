@@ -11,10 +11,10 @@ public class TwoThreads implements Runnable {
 	}
 	
 	public static void main(String[] args) {
-		new Thread(new TwoThreads(), "Thread 1").start();
-		new Thread(new TwoThreads(), "Thread 2").start();
-		new Thread(new TwoThreads(), "Thread 3").start();
-		new Thread(new TwoThreads(), "Thread 4").start();
+		new Thread(new TwoThreads(), "User 1").start();
+		new Thread(new TwoThreads(), "USer 2").start();
+		new Thread(new TwoThreads(), "User 3").start();
+		new Thread(new TwoThreads(), "User 4").start();
 		System.out.println("End of Main");
 	}
 
