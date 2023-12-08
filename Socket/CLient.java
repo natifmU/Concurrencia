@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.net.ServerSocket;
 import java.util.Scanner;
 
-public class CLient {
+public class Client {
 
 	public static void main(String[] args) {
 		try {
